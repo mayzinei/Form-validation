@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+	.input {
+		@apply w-full flex flex-col text-xs;
+	}
+	.input-box {
+		@apply w-full text-sm p-2 mt-1 outline-1 rounded-md;
+	}
+	.success .input-box {
+		@apply border-2 border-green-400;
+	}
+	.error {
+		@apply text-red-500;
+	}
+}
